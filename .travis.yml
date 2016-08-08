@@ -1,4 +1,7 @@
 osx_image: xcode8.0
 language: objective-c
 xcode_workspace: DeepLearningKit.xcworkspace
-xcode_scheme: OSXDeepLearningKitApp
+xcode_scheme:
+  - OSXDeepLearningKitApp
+  - iOSDeepLearningKitApp
+  - tvOSDeepLearningKitApp
