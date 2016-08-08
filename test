@@ -10,10 +10,10 @@ function xcode_tests {
         xcodebuild test -workspace DeepLearningKit.xcworkspace -scheme DeepLearningKit-OSX -destination "platform=OS X" &&
 
         # Run Tests via iOS
-        xcodebuild test -workspace DeepLearningKit.xcworkspace -scheme DeepLearningKit-iOS -destination "platform=iOS Simulator,name=iPhone 6,OS=9.2" &&
+        xcodebuild test -workspace DeepLearningKit.xcworkspace -scheme DeepLearningKit-iOS -destination "platform=iOS Simulator,name=iPhone 5s,OS=10.0" &&
 
         # Run Tests via tvOS
-        xcodebuild test -workspace DeepLearningKit.xcworkspace -scheme DeepLearningKit-tvOS -destination "platform=tvOS Simulator,name=Apple TV 1080p,OS=9.1"
+        xcodebuild test -workspace DeepLearningKit.xcworkspace -scheme DeepLearningKit-tvOS -destination "platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0"
     )
     echo
     echo "Xcode tests passed"
