@@ -1,5 +1,8 @@
 # [DeepLearningKit](http://deeplearningkit.org)
 
+[![Build Status](https://travis-ci.org/Allezxandre/DeepLearningKit.svg?branch=swift3)](https://travis-ci.org/Allezxandre/DeepLearningKit)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-red.svg)](https://swift.org)
+
 ## Deep Learning Framework for Apple's tvOS, iOS and OS X
 
 ### 0. DeepLearningKit Publication
