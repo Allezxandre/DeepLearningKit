@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53AC8AC81D17CD0300778BB5 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AC8AC71D17CD0300778BB5 /* DeepLearningKit.framework */; };
 		53AC8AC91D17D0F200778BB5 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B14E401C6FEAA600FCB69C /* Metal.framework */; };
 		67B14E2F1C6FE91400FCB69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B14E2E1C6FE91400FCB69C /* AppDelegate.swift */; };
 		67B14E311C6FE91400FCB69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B14E301C6FE91400FCB69C /* ViewController.swift */; };
@@ -20,10 +19,10 @@
 		67B14E5D1C6FED8A00FCB69C /* conv1.json in Resources */ = {isa = PBXBuildFile; fileRef = 67B14E5C1C6FED8A00FCB69C /* conv1.json */; };
 		6B57D62F1C82E16F0082387B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B57D62E1C82E16F0082387B /* UIImageExtension.swift */; };
 		6B57D6391C831ED60082387B /* ImageUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B57D6381C831ED60082387B /* ImageUtilityFunctions.swift */; };
+		ACA994141D58580700A9A1C0 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA994131D58580700A9A1C0 /* DeepLearningKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53AC8AC71D17CD0300778BB5 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../../../../../../../Users/rafael/Library/Developer/Xcode/DerivedData/DeepLearningKit-csfprtnhalzpycftepmcgcebvxbt/Build/Products/Debug-iphoneos/DeepLearningKit.framework"; sourceTree = "<group>"; };
 		67B14E2B1C6FE91400FCB69C /* iOSDeepLearningKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDeepLearningKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B14E2E1C6FE91400FCB69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67B14E301C6FE91400FCB69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		67B14E5C1C6FED8A00FCB69C /* conv1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conv1.json; sourceTree = "<group>"; };
 		6B57D62E1C82E16F0082387B /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		6B57D6381C831ED60082387B /* ImageUtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtilityFunctions.swift; sourceTree = "<group>"; };
+		ACA994131D58580700A9A1C0 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../build/Debug-iphoneos/DeepLearningKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA994141D58580700A9A1C0 /* DeepLearningKit.framework in Frameworks */,
 				53AC8AC91D17D0F200778BB5 /* Metal.framework in Frameworks */,
-				53AC8AC81D17CD0300778BB5 /* DeepLearningKit.framework in Frameworks */,
 				67B14E431C6FEAAC00FCB69C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,11 +57,11 @@
 		67B14E221C6FE91400FCB69C = {
 			isa = PBXGroup;
 			children = (
-				53AC8AC71D17CD0300778BB5 /* DeepLearningKit.framework */,
 				67B14E421C6FEAAC00FCB69C /* QuartzCore.framework */,
 				67B14E401C6FEAA600FCB69C /* Metal.framework */,
 				67B14E2D1C6FE91400FCB69C /* iOSDeepLearningKitApp */,
 				67B14E2C1C6FE91400FCB69C /* Products */,
+				ACA994121D58580700A9A1C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +99,14 @@
 			name = ThirdParty;
 			sourceTree = "<group>";
 		};
+		ACA994121D58580700A9A1C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA994131D58580700A9A1C0 /* DeepLearningKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,7 +139,8 @@
 				TargetAttributes = {
 					67B14E2A1C6FE91400FCB69C = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = K8ZY6W8PC2;
+						DevelopmentTeam = N3728MEJA4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -290,11 +299,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N3728MEJA4;
 				INFOPLIST_FILE = iOSDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.iswe.labs.DeepLearningKit-iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -304,11 +315,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N3728MEJA4;
 				INFOPLIST_FILE = iOSDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.iswe.labs.DeepLearningKit-iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53AC8ACB1D17D2E300778BB5 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AC8ACA1D17D2E300778BB5 /* DeepLearningKit.framework */; };
 		6B0A93641C724D9A00D73DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A93631C724D9A00D73DEB /* AppDelegate.swift */; };
 		6B0A93661C724D9A00D73DEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A93651C724D9A00D73DEB /* ViewController.swift */; };
 		6B0A93681C724D9A00D73DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0A93671C724D9A00D73DEB /* Assets.xcassets */; };
 		6B0A936B1C724D9A00D73DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0A93691C724D9A00D73DEB /* Main.storyboard */; };
-		6B0A93751C724DD200D73DEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0A93731C724DD200D73DEB /* QuartzCore.framework */; };
 		6B64DA2A1C724EE60048FD13 /* nin_cifar10_full.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B64DA1E1C724EE60048FD13 /* nin_cifar10_full.json */; };
 		6B64DA301C724F020048FD13 /* conv1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B64DA2F1C724F020048FD13 /* conv1.json */; };
+		ACA993FF1D58557100A9A1C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA993FE1D58557100A9A1C0 /* QuartzCore.framework */; };
+		ACA994011D58557700A9A1C0 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA994001D58557700A9A1C0 /* Metal.framework */; };
+		ACA9940D1D58568E00A9A1C0 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9940C1D58568E00A9A1C0 /* DeepLearningKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53AC8ACA1D17D2E300778BB5 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../../../../../../../Users/rafael/Library/Developer/Xcode/DerivedData/DeepLearningKit-csfprtnhalzpycftepmcgcebvxbt/Build/Products/Debug/DeepLearningKit.framework"; sourceTree = "<group>"; };
 		6B0A93601C724D9A00D73DEB /* OSXDeepLearningKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXDeepLearningKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0A93631C724D9A00D73DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B0A93651C724D9A00D73DEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B0A93671C724D9A00D73DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B0A936A1C724D9A00D73DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B0A936C1C724D9A00D73DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B0A93731C724DD200D73DEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6B64DA1E1C724EE60048FD13 /* nin_cifar10_full.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nin_cifar10_full.json; sourceTree = "<group>"; };
 		6B64DA2F1C724F020048FD13 /* conv1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conv1.json; sourceTree = "<group>"; };
+		ACA993FE1D58557100A9A1C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACA994001D58557700A9A1C0 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		ACA9940A1D58567700A9A1C0 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = ../build/Debug/DeepLearningKit.framework; sourceTree = "<group>"; };
+		ACA9940C1D58568E00A9A1C0 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DeepLearningKit-gwsapvcbuixsjagbuygqjmljuzge/Build/Products/Debug/DeepLearningKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AC8ACB1D17D2E300778BB5 /* DeepLearningKit.framework in Frameworks */,
-				6B0A93751C724DD200D73DEB /* QuartzCore.framework in Frameworks */,
+				ACA9940D1D58568E00A9A1C0 /* DeepLearningKit.framework in Frameworks */,
+				ACA994011D58557700A9A1C0 /* Metal.framework in Frameworks */,
+				ACA993FF1D58557100A9A1C0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,10 +50,9 @@
 		6B0A93571C724D9A00D73DEB = {
 			isa = PBXGroup;
 			children = (
-				53AC8ACA1D17D2E300778BB5 /* DeepLearningKit.framework */,
-				6B0A93731C724DD200D73DEB /* QuartzCore.framework */,
 				6B0A93621C724D9A00D73DEB /* OSXDeepLearningKitApp */,
 				6B0A93611C724D9A00D73DEB /* Products */,
+				ACA993FD1D58557100A9A1C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +76,17 @@
 				6B64DA1E1C724EE60048FD13 /* nin_cifar10_full.json */,
 			);
 			path = OSXDeepLearningKitApp;
+			sourceTree = "<group>";
+		};
+		ACA993FD1D58557100A9A1C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9940C1D58568E00A9A1C0 /* DeepLearningKit.framework */,
+				ACA9940A1D58567700A9A1C0 /* DeepLearningKit.framework */,
+				ACA994001D58557700A9A1C0 /* Metal.framework */,
+				ACA993FE1D58557100A9A1C0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,12 +116,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = DeepLearningKit;
 				TargetAttributes = {
 					6B0A935F1C724D9A00D73DEB = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = PVJ976FS8J;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -180,8 +195,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -224,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -254,8 +273,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = OSXDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.deeplearningkit.OSXDeepLearningKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -266,8 +287,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = OSXDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.deeplearningkit.OSXDeepLearningKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

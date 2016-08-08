@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53AC8ACF1D17D9F600778BB5 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AC8ACE1D17D9F600778BB5 /* DeepLearningKit.framework */; };
 		6B2942D71C73CCF80002721C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2942D61C73CCF80002721C /* AppDelegate.swift */; };
 		6B2942D91C73CCF80002721C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2942D81C73CCF80002721C /* ViewController.swift */; };
 		6B2942DC1C73CCF80002721C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2942DA1C73CCF80002721C /* Main.storyboard */; };
 		6B2942DE1C73CCF80002721C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2942DD1C73CCF80002721C /* Assets.xcassets */; };
-		6B2942E61C73CE3C0002721C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2942E51C73CE3B0002721C /* QuartzCore.framework */; };
 		6B2942F11C73CEB20002721C /* nin_cifar10_full.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B2942EB1C73CEB20002721C /* nin_cifar10_full.json */; };
 		6B2942FB1C73CEBB0002721C /* conv1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B2942F51C73CEBB0002721C /* conv1.json */; };
 		6B57D6321C82E6610082387B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B57D6311C82E6610082387B /* UIImageExtension.swift */; };
 		6B57D63B1C8321980082387B /* ImageUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B57D63A1C8321980082387B /* ImageUtilityFunctions.swift */; };
+		ACA993F81D58552500A9A1C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2942E51C73CE3B0002721C /* QuartzCore.framework */; };
+		ACA994171D5858D700A9A1C0 /* DeepLearningKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA994161D5858D700A9A1C0 /* DeepLearningKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53AC8ACE1D17D9F600778BB5 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../../../../../../../Users/rafael/Library/Developer/Xcode/DerivedData/DeepLearningKit-csfprtnhalzpycftepmcgcebvxbt/Build/Products/Debug-appletvsimulator/DeepLearningKit.framework"; sourceTree = "<group>"; };
 		6B2942D31C73CCF80002721C /* tvOSDeepLearningKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSDeepLearningKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2942D61C73CCF80002721C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B2942D81C73CCF80002721C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		6B2942F51C73CEBB0002721C /* conv1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conv1.json; sourceTree = "<group>"; };
 		6B57D6311C82E6610082387B /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		6B57D63A1C8321980082387B /* ImageUtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtilityFunctions.swift; sourceTree = "<group>"; };
+		ACA994161D5858D700A9A1C0 /* DeepLearningKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLearningKit.framework; path = "../build/Debug-appletvos/DeepLearningKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AC8ACF1D17D9F600778BB5 /* DeepLearningKit.framework in Frameworks */,
-				6B2942E61C73CE3C0002721C /* QuartzCore.framework in Frameworks */,
+				ACA994171D5858D700A9A1C0 /* DeepLearningKit.framework in Frameworks */,
+				ACA993F81D58552500A9A1C0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +50,10 @@
 		6B2942CA1C73CCF80002721C = {
 			isa = PBXGroup;
 			children = (
-				53AC8ACE1D17D9F600778BB5 /* DeepLearningKit.framework */,
 				6B2942E51C73CE3B0002721C /* QuartzCore.framework */,
 				6B2942D51C73CCF80002721C /* tvOSDeepLearningKitApp */,
 				6B2942D41C73CCF80002721C /* Products */,
+				ACA994151D5858D700A9A1C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +89,14 @@
 			name = ThirdParty;
 			sourceTree = "<group>";
 		};
+		ACA994151D5858D700A9A1C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA994161D5858D700A9A1C0 /* DeepLearningKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,11 +124,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = DeepLearningKit;
 				TargetAttributes = {
 					6B2942D21C73CCF80002721C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = N3728MEJA4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -195,8 +205,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -221,6 +233,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -239,8 +252,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -257,6 +272,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALIDATE_PRODUCT = YES;
@@ -268,10 +284,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = N3728MEJA4;
 				INFOPLIST_FILE = tvOSDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.deeplearningkit.tvOSDeepLearningKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Debug;
@@ -281,10 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = N3728MEJA4;
 				INFOPLIST_FILE = tvOSDeepLearningKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.deeplearningkit.tvOSDeepLearningKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;

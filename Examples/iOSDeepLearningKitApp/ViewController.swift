@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         deepNetwork = DeepNetwork()
         
@@ -61,13 +61,13 @@ class ViewController: UIViewController {
     
     //***********************************************************************************
     
-    func showCIFARImage(cifarImageData:[Float]) {
+    func showCIFARImage(_ cifarImageData:[Float]) {
         var cifarImageData = cifarImageData
         let size = CGSize(width: 32, height: 32)
         let rect = CGRect(origin: CGPoint(x: 0,y: 0), size: size)
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        UIColor.whiteColor().setFill() // or custom color
+        UIColor.white.setFill() // or custom color
         UIRectFill(rect)
         var image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -85,16 +85,16 @@ class ViewController: UIViewController {
                 
                 // used to set pixels - RGBA into an UIImage
                 // for more info about RGBA check out https://en.wikipedia.org/wiki/RGBA_color_space
-                image = image.setPixelColorAtPoint(CGPoint(x: j,y: i), color: UIImage.RawColorType(r,g,b,255))!
+                image = image?.setPixelColorAtPoint(CGPoint(x: j,y: i), color: UIImage.RawColorType(r,g,b,255))!
                 
                 // used to read pixels - RGBA from an UIImage
-                _ = image.getPixelColorAtLocation(CGPoint(x:i, y:j))
+                _ = image?.getPixelColorAtLocation(CGPoint(x:i, y:j))
             }
         }
-        print(image.size)
+        print(image?.size)
         
         // Displaying original image.
-        let originalImageView:UIImageView = UIImageView(frame: CGRectMake(20, 20, image.size.width, image.size.height))
+        let originalImageView:UIImageView = UIImageView(frame: CGRect(x: 20, y: 20, width: image!.size.width, height: image!.size.height))
         originalImageView.image = image
         self.view.addSubview(originalImageView)
     }
