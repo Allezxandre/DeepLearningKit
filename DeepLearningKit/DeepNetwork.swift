@@ -14,8 +14,8 @@ public class DeepNetwork {
     var namedDataLayers: [(String, MTLBuffer)] = []
     var imageBuffer: MTLBuffer!
     var metalDevice: MTLDevice!
-    var metalDefaultLibrary: MTLLibrary!
-    var metalCommandQueue: MTLCommandQueue!
+    var metalDefaultLibrary: MTLLibrary
+    var metalCommandQueue: MTLCommandQueue
     var deepNetworkAsDict: NSDictionary! // for debugging perhaps
     var layer_data_caches: [Dictionary<String,MTLBuffer>] = []
     var pool_type_caches: [Dictionary<String,String>] = []
@@ -29,16 +29,20 @@ public class DeepNetwork {
         
         // Queue to handle an ordered list of command buffers
         metalCommandQueue = metalDevice.newCommandQueue()
-        print("metalCommandQueue = \(unsafeAddress(of: metalCommandQueue))")
         
         // Access to Metal functions that are stored in Shaders.metal file, e.g. sigmoid()
-        metalDefaultLibrary = metalDevice.newDefaultLibrary()
+        let bundle = Bundle(for: DeepNetwork.self)
+        guard let library = try? metalDevice.newDefaultLibrary(with: bundle) else {
+            fatalError("Cannot load default Library for Bundle \(bundle)")
+        }
+        metalDefaultLibrary = library
     }
     
     public func loadNetworkFromJson(_ jsonNetworkFileName: String) {
         deepNetworkAsDict = loadJSONFile(jsonNetworkFileName)!
     }
     
+    @discardableResult
     public func classify(_ image: [Float], shape:[Float]) -> Int {
         let imageTensor = createMetalBuffer(image, metalDevice: metalDevice)
         

@@ -128,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				53AC8A4E1D17AD3500778BB5 /* ConvolutionLayer.swift */,
-				53AC8A501D17AD3500778BB5 /* DeepNetwork+JSON.swift */,
-				53AC8A511D17AD3500778BB5 /* DeepNetwork+SetupNetworkFromDict.swift */,
 				53AC8A541D17AD3500778BB5 /* PoolingLayer.swift */,
 				53AC8A551D17AD3500778BB5 /* RectifierLayer.swift */,
 			);
@@ -140,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				53AC8A4F1D17AD3500778BB5 /* DeepNetwork.swift */,
+				53AC8A501D17AD3500778BB5 /* DeepNetwork+JSON.swift */,
+				53AC8A511D17AD3500778BB5 /* DeepNetwork+SetupNetworkFromDict.swift */,
 			);
 			name = PUBLIC_API;
 			sourceTree = "<group>";
@@ -387,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos10.0;
@@ -433,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos10.0;
 				SWIFT_VERSION = 3.0;
@@ -502,7 +502,7 @@
 				INFOPLIST_FILE = DeepLearningKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.iswe.labs.DeepLearningKit-OSX";
 				PRODUCT_NAME = DeepLearningKit;
 				SDKROOT = macosx;
@@ -524,7 +524,7 @@
 				INFOPLIST_FILE = DeepLearningKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.iswe.labs.DeepLearningKit-OSX";
 				PRODUCT_NAME = DeepLearningKit;
 				SDKROOT = macosx;
@@ -550,7 +550,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -572,7 +572,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

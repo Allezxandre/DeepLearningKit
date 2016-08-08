@@ -16,8 +16,7 @@ public extension DeepNetwork {
         let start = Date()
         
         gpuCommandLayers = []
-
-        print(" ==> setupNetworkFromDict()")
+        
         // Add input image
         var layer_number = 0
         layer_data_caches.append(Dictionary<String, MTLBuffer>()) // for input
@@ -59,7 +58,7 @@ public extension DeepNetwork {
                 } else if type == "Convolution" {
                     self.gpuCommandLayers.append(currentCommandBuffer)
                     //                    (previousBuffer, currentCommandBuffer, previousShape) = createConvolutionLayer(layer, inputBuffer: previousBuffer, inputShape: previousShape)
-                    (previousBuffer, currentCommandBuffer, previousShape) = createConvolutionLayerCached(layer, inputBuffer: previousBuffer, inputShape: previousShape, metalCommandQueue: metalCommandQueue, metalDefaultLibrary:metalDefaultLibrary, metalDevice:metalDevice, layer_data_caches: &layer_data_caches, blob_cache: &blob_cache, layer_number: layer_number, layer_string: layer_string)
+                    (previousBuffer, currentCommandBuffer, previousShape) = createConvolutionLayerCached(layer, inputBuffer: previousBuffer, inputShape: previousShape, metalCommandQueue: metalCommandQueue, metalDefaultLibrary:metalDefaultLibrary, metalDevice: metalDevice, layer_data_caches: &layer_data_caches, blob_cache: &blob_cache, layer_number: layer_number, layer_string: layer_string)
                     
                     
                     self.namedDataLayers.append((layer["name"]! as! String, previousBuffer))

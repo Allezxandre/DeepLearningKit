@@ -9,7 +9,7 @@
 import Foundation
 import Metal
 
-func createRectifierLayer(_ inputBuffer: MTLBuffer, metalCommandQueue: MTLCommandQueue, metalDefaultLibrary:MTLLibrary, metalDevice:MTLDevice) -> (MTLBuffer,MTLCommandBuffer) {
+func createRectifierLayer(_ inputBuffer: MTLBuffer, metalCommandQueue: MTLCommandQueue, metalDefaultLibrary: MTLLibrary, metalDevice: MTLDevice) -> (MTLBuffer,MTLCommandBuffer) {
     print(" ==> createrectifierlayer")
 //    let metalCommandBuffer = metalCommandQueue.commandBuffer()
     let metalCommandBuffer = metalCommandQueue.commandBufferWithUnretainedReferences()

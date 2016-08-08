@@ -26,7 +26,7 @@ func getDataFromBlob(_ blob: NSDictionary) -> ([Float], [Float]) {
 func createConvolutionLayerCached(_ layer: NSDictionary,
     inputBuffer: MTLBuffer,
     inputShape: [Float],
-    metalCommandQueue: MTLCommandQueue, metalDefaultLibrary:MTLLibrary, metalDevice:MTLDevice,
+    metalCommandQueue: MTLCommandQueue, metalDefaultLibrary: MTLLibrary, metalDevice: MTLDevice,
     layer_data_caches: inout [Dictionary<String,MTLBuffer>],
     blob_cache: inout [Dictionary<String,([Float],[Float])>],
     layer_number: Int,
